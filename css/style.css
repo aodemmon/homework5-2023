@@ -2,6 +2,7 @@ body{
     font-family: 'Poppins', serif;
     background-image: url('../images/concrete_seamless.png');
     background-color: #f1f1f1;
+    font-size: 1em;
 }
 
 header{
@@ -10,22 +11,26 @@ header{
     align-items: center;
 }
 
+h1 {
+    font-size: 2em;
+    text-align: center;
+    line-height: 2;
+}
+
+h2 {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 5px;
+}
+
+p {
+    padding: 0 30px;
+}
+
 .nav_item a:hover, a:visited {
     color: blue;
     text-decoration: underline;
-    -webkit-text-decoration-style: dotted;
-            text-decoration-style: dotted;
-}
-
-@-webkit-keyframes logo_anim {
-    0% {
-        width: 25px;
-        opacity: 0;
-    }
-    100% {
-        width: 475px;
-        opacity: 1;
-    }
+    text-decoration-style: dotted;
 }
 
 @keyframes logo_anim {
@@ -40,27 +45,75 @@ header{
 }
 
 #logo {
-    -webkit-animation-name: logo_anim;
     animation-name: logo_anim;
-    -webkit-animation-duration: 5s;
     animation-duration: 5s;
+}
+
+.pricing {
+    min-height: 500px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.card {
+    margin: 12px;
+    background: #ffffff;
+    border-radius: 7px;
+    padding: 0 0 50px 0;
+    flex-basis: 400px;
 }
 
 .card > header{
     background: #288088;
     border: solid 2px #4545AD;
     padding: 20px 0px;
-    border-radius: 50px;
+    border-radius: 10px 10px 0px 0px;
+}
+.card > ul {
+    list-style: none;
+    padding: 0;
 }
 
-.card {
-    border-radius: 50px 50px 0px 0px;
+.card > ul li {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.card button {
+    width: 90%;
+    height: 40px;
+    border: 0;
+    margin-left: 12px;
+    border-radius: 7px;
+    background: #288080;
+    color: white;
+    font-size: 1em;
+}
+
+.card h3 {
+    font-size: 4em;
+    color: white;
+    text-align: center;
+}
+
+.card_big {
+    transform: initial;
+}
+
+.gallery {
+    min-height: 600px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
 .gallery > img {
     border: solid 10px #50C7C7;
     margin: 10px;
     width: 300px;
-    display: flex;
-    flex-wrap: wrap-reverse;
 }
