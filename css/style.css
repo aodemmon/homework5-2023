@@ -117,3 +117,23 @@ p {
     margin: 10px;
     width: 300px;
 }
+
+@media (prefers-reduced-motion: reduce) {
+    #logo {
+      animation: none;
+    }
+   }
+   
+@media print {
+    .pricing {
+    box-align: start;
+    align-items: flex-start;
+    box-orient: horizontal;
+    box-direction: normal;
+    flex-direction: row;
+    }
+}
+   
+.card {
+    flex-basis: 200px;
+}
