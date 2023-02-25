@@ -132,8 +132,9 @@ p {
     box-direction: normal;
     flex-direction: row;
     }
+
+    .card {
+        flex-basis: 200px;
+    }
 }
    
-.card {
-    flex-basis: 200px;
-}
